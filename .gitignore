@@ -3,11 +3,5 @@ cscope.*out
 *.o
 *.d
 *.swp
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
+test/test
+cscope.files

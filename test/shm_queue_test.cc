@@ -283,7 +283,7 @@ class ShmQueueConcPerfTest : public ShmQueueTest<Alloc> {
   }
 
   pid_t wpid_;
-  std::atomic_bool stop_{false};
+  std::atomic_bool stop_ = {false};
   std::thread timer_thread_;
   shmc::ShmArray<SharedStatus, SharedShmAlloc> status_;
 };

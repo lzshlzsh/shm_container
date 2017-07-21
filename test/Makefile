@@ -7,7 +7,7 @@ include /usr/local/gflags/Makefile.env
 CXX := /data/gcc-build-4.8.1/bin/g++
 CXXFLAGS += -Wall -g -O2 -Wall -std=c++0x -fno-strict-aliasing -DUNIT_TEST
 CXXFLAGS += -I../src
-LDFLAGS += -pthread -Wl,-dn $(addprefix -l,stdc++) -Wl,-dy
+LDFLAGS += -pthread -Wl,-dn $(addprefix -l,stdc++) -Wl,-dy -lrt
 
 .PHONY: all clean
 
